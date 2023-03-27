@@ -6,7 +6,6 @@ double rerata(double a, double b) {
 }
 
 
-
 int main()
 {
     std::cout << "Hello World!\n";
