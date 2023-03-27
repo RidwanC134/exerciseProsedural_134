@@ -2,18 +2,18 @@
 using namespace std;
 
 double rerata(double a, double b) {
-    return (a + b) / 2;
+    return (a+b)/2;
 }
 
 string status(double c) {
-    if (c <= 70)
+    if (c >= 70)
         return "Diterima";
     else 
         return "Ditolak";
 }
 
 string status2(double rata, double nil) {
-    if (rata <= 70 || nil > 80)
+    if (rata >= 70 || nil >= 80)
         return "Diterima";
     else
         return "Ditolak";
@@ -21,6 +21,11 @@ string status2(double rata, double nil) {
 
 int main()
 {
+    char nama[30];
+    cout << "Masukan nama anda : ";
+    cin >> nama;
+    cout << endl;
+
     double nilM, nilB;
     cout << "Masukan nilai Matematika = ";
     cin >> nilM;
