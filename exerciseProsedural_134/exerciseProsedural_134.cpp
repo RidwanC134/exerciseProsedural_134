@@ -6,9 +6,16 @@ double rerata(double a, double b) {
 }
 
 string status(double c) {
-    if (c < 70)
+    if (c <= 70)
         return "Lulus";
     else 
+        return "Gagal";
+}
+
+string status2(double rata, double nil) {
+    if (rata <= 60 || nil > 80)
+        return "Lulus";
+    else
         return "Gagal";
 }
 
