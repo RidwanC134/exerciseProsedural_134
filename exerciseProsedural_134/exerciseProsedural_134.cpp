@@ -31,6 +31,7 @@ int main()
     cin >> nilM;
     cout << "Masukan nilai Bahasa Inggris = ";
     cin >> nilB;
+    cout << "Nama Kandidat : " << nama << endl;
     cout << "Status kelulusan = " << status(rerata(nilM, nilB));
     cout << "\nStatus kelulusan ke 2 = " << status2(rerata(nilM, nilB), nilM);
     return 0;
