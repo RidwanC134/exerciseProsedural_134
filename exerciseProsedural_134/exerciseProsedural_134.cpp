@@ -7,19 +7,26 @@ double rerata(double a, double b) {
 
 string status(double c) {
     if (c <= 70)
-        return "Lulus";
+        return "Diterima";
     else 
-        return "Gagal";
+        return "Ditolak";
 }
 
 string status2(double rata, double nil) {
-    if (rata <= 60 || nil > 80)
-        return "Lulus";
+    if (rata <= 70 || nil > 80)
+        return "Diterima";
     else
-        return "Gagal";
+        return "Ditolak";
 }
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    double nilM, nilB;
+    cout << "Masukan nilai Matematika = ";
+    cin >> nilM;
+    cout << "Masukan nilai Bahasa Inggris = ";
+    cin >> nilB;
+    cout << "Status kelulusan = " << status(rerata(nilM, nilB));
+    cout << "\nStatus kelulusan ke 2 = " << status2(rerata(nilM, nilB), nilM);
+    return 0;
 }
