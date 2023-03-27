@@ -13,7 +13,7 @@ string status(double c) {
 }
 
 string status2(double rata, double nil) {
-    if (rata >= 70 || nil >= 80)
+    if (rata >= 70 || nil >= 80) 
         return "Diterima";
     else
         return "Ditolak";
